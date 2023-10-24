@@ -44,7 +44,11 @@ rna
 
 ### Function 3 - codons()
 
+<<<<<<< HEAD
 \<\<\<\<\<\<\< HEAD The intended application for the function is to split a given RNA sequence into codons from the specified start position in line with translation of RNA. The function then returns a vector of codons
+=======
+The intended application for the function is to split a given RNA sequence into codons from the specified start position in line with translation of RNA. The function then returns a vector of codons
+>>>>>>> 441acbe4bbc3f8326cee44a8201867b276c211e3
 
 Function Operation: The input for the function is a string and a integer for overall start position. Based on the length of the string and the start position, the function will create a vector of substrings with the function substring(). The substring() function operates by creating two vectors; one for the start position and one for the stop position for each codon and splitting the string based on each set of start/stop position. NOTE: The function has no input-control and as consequence any non-RNA string can be given and the function will still split it.
 
