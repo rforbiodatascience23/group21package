@@ -33,9 +33,9 @@ dna <- random_peptide(300)
 dna
 ```
 
-### Function 2
+### Function 2 - convert_t\_to_u()
 
-Converts DNA to RNA by substituting Thymine with Uracil.
+The function `convert_t_to_u` takes a DNA sequence as input and returns the corresponding RNA sequence where thymine (T) has been replaced with uracil (U). The function achieves this by using the `gsub` function to replace all occurrences of "T" with "U" in the DNA sequence. This function can be used to convert a DNA sequence into an RNA sequence by substituting thymine with uracil. It is important to note that the function assumes the input DNA sequence is valid and does not perform any error checking.
 
 ```{r}
 rna <- convert_t_to_u(dna)
@@ -44,8 +44,7 @@ rna
 
 ### Function 3
 
-The purpose of the function is to split a given RNA sequence into codons, from the specified start position. The function then returns a vector of substrings (codons).
-NOTE: The function has no input-control meaning that any non-RNA string can be given and the function will still split it. 
+The purpose of the function is to split a given RNA sequence into codons, from the specified start position. The function then returns a vector of substrings (codons). NOTE: The function has no input-control meaning that any non-RNA string can be given and the function will still split it.
 
 ```{r}
 split_codons <- codons(rna)
