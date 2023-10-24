@@ -1,18 +1,19 @@
 ---
-title: "gene2peptide"
-output: rmarkdown::pdf_document
-vignette: >
-  %\VignetteIndexEntry{gene2protein}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+output: github_document
 ---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
 )
 ```
+
+# gene2protein
 
 ```{r setup}
 library(gene2protein)
@@ -89,3 +90,4 @@ Our package covers every step in the central dogma from the creation of sample D
 ### Additional functions
 
 Rather than inputting a sample sequence, the function could take as input, a fasta file of DNA sequence data, and output a fasta file containing the translated peptide data.
+
