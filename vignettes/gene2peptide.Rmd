@@ -51,9 +51,13 @@ split_codons <- codons(rna)
 split_codons
 ```
 
-### Function 4
+### Function 4 - codon_to_aa()
 
 Takes a codon and converts it to an amino acid shortcode.
+
+Function Operation: The function takes a single string codon or a vector of string codons as an argument and converts the codons via. the codon table. The value/values of the convertion are then concatenated into a single string amino acid sequence, which is the return of this funciton.
+
+Function Handling: Input specifically needs to be RNA codons of amino acids, since the function looks up the codon in the codon table stored in this package "gene2protein".
 
 ```{r}
 aa_seq <- codon_to_aa(split_codons)
