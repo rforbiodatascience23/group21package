@@ -24,9 +24,9 @@ library(gene2protein)
 
 # Functions
 
-### Function 1
+### Function 1 - random_peptide()
 
-Takes an integer input, specifies the desired length of the DNA sequence, and generates a random DNA sequence of a specified length, using the nucleotide bases **adenine (A), cytosine (C), guanine (G) and thymine (T)**, and
+Function 1 takes an integer input, that specifies the desired length of a DNA sequence. It then generates a random sequence, of the specified length, using the nucleotide bases **adenine (A), cytosine (C), guanine (G) and thymine (T)**. The "collapse" function is implemented to string these nucleotides together.
 
 ```{r}
 dna <- random_peptide(300)
@@ -44,7 +44,7 @@ rna
 
 ### Function 3
 
-Splits a given RNA sequence into codons, from the specified start position.
+The purpose of the function is to split a given RNA sequence into codons, from the specified start position. The function then returns a vector of substrings (codons). NOTE: The function has no input-control meaning that any non-RNA string can be given and the function will still split it.
 
 ```{r}
 split_codons <- codons(rna)
@@ -64,9 +64,13 @@ aa_seq <- codon_to_aa(split_codons)
 aa_seq
 ```
 
-### Function 5
+### Function 5 - aa_content()
 
-Finds unique amino acids in the peptide and creates a barplot for the number of occurrences for each amino acid.
+This function finds unique amino acids in the peptide and creates a barplot for the number of occurrences for each amino acid.
+
+The function splits the input string with the stringr package's "boundary" function and counts the occurances of each unique amino acid with the "str_count" function. It does not have a pre-concieved notion of the amino acid symbols, but they have to be single-letter codes.
+
+The output plot is created via the ggplot2 package and uses the functions "ggplot", "aes", "geom_col", "theme_bw", and "theme".
 
 ```{r}
 aa_content(aa_seq)

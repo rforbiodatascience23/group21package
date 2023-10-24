@@ -1,8 +1,8 @@
 #' Substitute thymine with uracil
 #'
-#' @param dna_seq text
+#' @param dna_seq Input should be a dna string of any given length
 #'
-#' @return rna_seq text
+#' @return rna_seq Output is the corresponding rna string where thymine has been replaced with uracil
 #' @export
 #'
 #' @examples convert_t_to_u("ATGCTAGCTA")
