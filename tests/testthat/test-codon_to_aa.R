@@ -3,6 +3,5 @@ test_that("translation successful", {
 })
 
 test_that("translation successful", {
-  expect_equal(codon_to_aa("CGC"),"R")
+  expect_equal(codon_to_aa(c("AUG","CGC","UAA")),"MR_")
 })
-

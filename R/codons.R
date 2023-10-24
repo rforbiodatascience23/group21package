@@ -1,9 +1,9 @@
-#' Printing codons for a sequence given
+#' Splits a sequence into codons
 #'
-#' @param sequence any string given will work, but this function is primarily relevant for DNA and protein sequences.
-#' @param start from which position the function will start returning substrings. Default = 1
+#' @param sequence  any string given will work, but this function is primarily relevant for RNA sequences in compliance with the central dogma.
+#' @param start from which position the function will start splitting the string. Default = 1
 #'
-#' @return returning codons (substrings of three characters) of a sequence
+#' @return returning a vector of codons (substrings of three characters).
 #' @export
 #'
 #' @examples codons("ATCGGCTGGCAT")
