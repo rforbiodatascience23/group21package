@@ -1,6 +1,6 @@
 #' codon_to_aa
 #'
-#' @param codons string of amino acid shortcodes
+#' @param codons vector of rna codons
 #'
 #' @return string of translated amino acid sequence
 #' @export

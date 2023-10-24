@@ -7,7 +7,7 @@
 codon_to_aa(codons)
 }
 \arguments{
-\item{codons}{string of amino acid shortcodes}
+\item{codons}{vector of rna codons}
 }
 \value{
 string of translated amino acid sequence
