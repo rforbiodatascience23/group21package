@@ -17,10 +17,13 @@ Authors@R: c(person(given = "Tobias", family = "Christiansen", role = c("aut", "
            family = "Adsersen",
            role = "aut",
            email = "s215085@dtu.dk"))
-Description: Replicates the central dogma
+Description: Replicates the central dogma.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10)
 RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
