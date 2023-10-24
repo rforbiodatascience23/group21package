@@ -62,7 +62,11 @@ aa_seq
 
 ### Function 5
 
-Finds unique amino acids in the peptide and creates a barplot for the number of occurrences for each amino acid.
+This function finds unique amino acids in the peptide and creates a barplot for the number of occurrences for each amino acid.
+
+The function splits the input string with the stringr package's "boundary" function and counts the occurances of each unique amino acid with the "str_count" function. It does not have a pre-concieved notion of the amino acid symbols, but they have to be single-letter codes.
+
+The output plot is created via the ggplot2 package and uses the functions "ggplot", "aes", "geom_col", "theme_bw", and "theme".
 
 ```{r}
 aa_content(aa_seq)
