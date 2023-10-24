@@ -17,7 +17,7 @@ Authors@R: c(person(given = "Tobias", family = "Christiansen", role = c("aut", "
            family = "Adsersen",
            role = "aut",
            email = "s215085@dtu.dk"))
-Description: Replicates the central dogma
+Description: Replicates the central dogma.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
