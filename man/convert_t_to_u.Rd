@@ -7,10 +7,10 @@
 convert_t_to_u(dna_seq)
 }
 \arguments{
-\item{dna_seq}{text}
+\item{dna_seq}{Input should be a dna string of any given length}
 }
 \value{
-rna_seq text
+rna_seq Output is the corresponding rna string where thymine has been replaced with uracil
 }
 \description{
 Substitute thymine with uracil
