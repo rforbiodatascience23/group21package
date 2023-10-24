@@ -24,9 +24,18 @@ library(gene2protein)
 
 Creates a random DNA sequence of a given length.
 
+```{r}
+#Testing function 1
+sample_(300)
+```
+
 ### Function 2
 
 Converts DNA to RNA by substituting Thymine with Uracil.
+
+```{r}
+
+```
 
 ### Function 3
 
