@@ -1,0 +1,51 @@
+---
+title: "gene2peptide"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{gene2peptide}
+  %\VignetteEngine{rmarkdown::pdf_document}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(gene2protein)
+```
+
+# Functions
+
+### Function 1
+
+Creates a random DNA sequence of a given length.
+
+### Function 2
+
+Converts DNA to RNA by substituting Thymine with Uracil.
+
+### Function 3
+
+Splits a given RNA sequence into codons, from the specified start position.
+
+### Function 4
+
+Takes a codon and converts it to an amino acid shortcode.
+
+### Function 5
+
+Finds unique amino acids in the peptide and creates a barplot for the number of occurrences for each amino acid.
+
+# Discussion
+
+### Use cases
+
+Our package covers every step in the central dogma from the creation of sample DNA to the translation of peptide sequences.
+
+### Additional functions
+
+Rather than inputting a sample sequence, the function could take as input, a fasta file of DNA sequence data, and output a fasta file containing the translated peptide data.
