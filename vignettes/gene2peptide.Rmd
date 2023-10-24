@@ -26,7 +26,7 @@ library(gene2protein)
 
 ### Function 1
 
-Takes an integer input, that specifies the desired length of the sequence, and generates a random DNA sequence of a specified length, using the nucleotide bases **adenine (A), cytosine (C), guanine (G) and thymine (T)**.
+Function 1 takes an integer input, that specifies the desired length of a DNA sequence. It then generates a random sequence, of the specified length, using the nucleotide bases **adenine (A), cytosine (C), guanine (G) and thymine (T)**. The "collapse" function is implemented to string these nucleotides together.
 
 ```{r}
 dna <- random_peptide(300)
