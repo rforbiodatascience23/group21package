@@ -5,7 +5,7 @@
 #' @return return description of function output
 #' @export
 #'
-#' @examples sequence("ATGCCTACGA")
+#' @examples sequence(1234)
 
 random_peptide <- function(sequence){
   nucleotides <- sample(c("A", "T", "G", "C"), size = sequence, replace = TRUE)

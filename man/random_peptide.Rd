@@ -16,5 +16,5 @@ return description of function output
 random_peptide
 }
 \examples{
-sequence("ATGCCTACGA")
+sequence(1234)
 }
