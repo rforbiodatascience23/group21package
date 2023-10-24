@@ -1,6 +1,6 @@
 ---
 title: "gene2peptide"
-output: rmarkdown::html_vignette
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{gene2peptide}
   %\VignetteEngine{rmarkdown::pdf_document}
