@@ -18,15 +18,19 @@ knitr::opts_chunk$set(
 library(gene2protein)
 ```
 
+# Repository
+
+<https://github.com/rforbiodatascience23/group21package>
+
 # Functions
 
 ### Function 1
 
-Creates a random DNA sequence of a given length.
+Takes an integer input, that specifies the desired length of the sequence, and generates a random DNA sequence of a specified length, using the nucleotide bases **adenine (A), cytosine (C), guanine (G) and thymine (T)**.
 
 ```{r}
-#Testing function 1
-sample_(300)
+dna <- random_peptide(300)
+dna
 ```
 
 ### Function 2
@@ -34,7 +38,8 @@ sample_(300)
 Converts DNA to RNA by substituting Thymine with Uracil.
 
 ```{r}
-
+rna <- convert_t_to_u(dna)
+rna
 ```
 
 ### Function 3
@@ -42,13 +47,27 @@ Converts DNA to RNA by substituting Thymine with Uracil.
 The purpose of the function is to split a given RNA sequence into codons, from the specified start position. The function then returns a vector of substrings (codons).
 NOTE: The function has no input-control meaning that any non-RNA string can be given and the function will still split it. 
 
+```{r}
+split_codons <- codons(rna)
+split_codons
+```
+
 ### Function 4
 
 Takes a codon and converts it to an amino acid shortcode.
 
+```{r}
+aa_seq <- codon_to_aa(split_codons)
+aa_seq
+```
+
 ### Function 5
 
 Finds unique amino acids in the peptide and creates a barplot for the number of occurrences for each amino acid.
+
+```{r}
+aa_content(aa_seq)
+```
 
 # Discussion
 
