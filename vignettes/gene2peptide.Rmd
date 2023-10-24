@@ -60,7 +60,7 @@ aa_seq <- codon_to_aa(split_codons)
 aa_seq
 ```
 
-### Function 5
+### Function 5 - aa_content()
 
 This function finds unique amino acids in the peptide and creates a barplot for the number of occurrences for each amino acid.
 
